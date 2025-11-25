@@ -2,6 +2,7 @@
 Project 00: Дополнительные тесты
 Используй этот файл для тестирования своих функций на разных данных
 """
+from statistics_calculator import doit
 
 # TODO: Импортируй функции из statistics_calculator.py
 
@@ -14,16 +15,20 @@ def test_functions():
     data1 = [100, 150, 200, 180, 220, 190, 210, 170, 160, 140]
     print(f"Данные 1: {data1}")
     # TODO: Вызови функции и выведи результаты
-    
+    doit(data1)
+
+
     # Тест 2: Отрицательные числа
     data2 = [-5, -3, 0, 3, 5]
-    print(f"Данные 2: {data2}")
+    print(f"\nДанные 2: {data2}")
     # TODO: Вызови функции и выведи результаты
-    
+    doit(data2)
+
     # Тест 3: Один элемент
     data3 = [42]
-    print(f"Данные 3: {data3}")
+    print(f"\nДанные 3: {data3}")
     # TODO: Вызови функции и выведи результаты
+    doit(data3)
 
 if __name__ == "__main__":
     test_functions()
